@@ -1,6 +1,6 @@
 package EDA_LAB3.Ejercicio3_Colas;
 
-public class Node<T> {
+public class Node<T> { //node
     private T data;
     private Node<T> nextNode;
 
