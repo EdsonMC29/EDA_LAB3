@@ -41,4 +41,13 @@ public class Queue<T> { // Creando una clase Generica.
     public boolean isEmpty() { // Utilizamos este metodo para verificar si la cola esta vacia.	
         return raiz == null; // Devuelve true si "raiz" es null, lo que significa que no hay nodos en la cola, y false en caso contrario.
     }
+    public int size() { // Este metodo devueleve el tamaño de la cola.
+        int count = 0; // Contador
+        Node<T> currentNode = raiz;
+        while (currentNode != null) {
+            count++;       // recorre los nodos de la cola, incrementando el contador por cada nodo encontrado.
+            currentNode = currentNode.getNextNode();
+        }
+        return count; // Al final, devuelve el valor de count.
+    }
 }
