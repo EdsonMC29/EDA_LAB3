@@ -19,4 +19,26 @@ public class Queue<T> { // Creando una clase Generica.
             Cola = newNode;
         }
     }
+    public T dequeue() {  // Se crea le metodo "dequeue", el cual elimina un elemento y devuelve el siguiente al frente de la cola.
+        if (isEmpty()) {
+            throw new NoSuchElementException("La Cola esta vacia."); // Si la cola esta vacia manda una excepcion. 
+        }
+        T data = raiz.getData();  // 
+        raiz = raiz.getNextNode();
+        if (raiz== null) {   // Verficamos si la raiz esta vacio, si es asi, la cola tambien sera vacia.
+        	Cola = null;
+        }
+        return data; // Se retorna "data" el cual contiene un valor almacenado.
+    }
+
+    public T peek() {  //Utilizamos el metodo "peek" para obtener el elemento al frente de la cola sin eliminarlo.
+        if (isEmpty()) { // si la cola se encuentra vacia nos lanza una excepcion, imprimiendo el sms de la siguiente linea.
+            throw new NoSuchElementException("La Cola esta vacia."); 
+        }
+        return raiz.getData(); //Si la cola no está vacía, se devuelve el valor de los datos del nodo raíz.
+    }
+
+    public boolean isEmpty() { // Utilizamos este metodo para verificar si la cola esta vacia.	
+        return raiz == null; // Devuelve true si "raiz" es null, lo que significa que no hay nodos en la cola, y false en caso contrario.
+    }
 }
