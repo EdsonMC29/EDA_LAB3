@@ -5,7 +5,7 @@ public class Node<T> { // Creamos nuestra clase generica "Node" / lista enlazada
 	    private Node<T> nextNode;
 
 	    public Node(T data) { // Creando el constructor de la clase Node.
-	        this.data = data; // Inicializa el nodo.
+	        this.data = data;  // Inicializa el nodo.
 	        this.nextNode = null; 
 	    }
 	    
