@@ -28,7 +28,7 @@ public class Queue<T> { // Creando una clase Generica.
         if (raiz== null) {   // Verficamos si la raiz esta vacio, si es asi, la cola tambien sera vacia.
         	Cola = null;
         }
-        return data; // Se retorna "data" el cual contiene un valor almacenado.
+        return data;    //Se retorna "data" el cual contiene un valor almacenado.
     }
 
     public T peek() {  //Utilizamos el metodo "peek" para obtener el elemento al frente de la cola sin eliminarlo.
