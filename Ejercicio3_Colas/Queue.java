@@ -1,3 +1,4 @@
+package EDA_LAB3.Ejercicio3_Colas;
 import java.util.NoSuchElementException;
 
 public class Queue<T> { // Creando una clase Generica.  	
