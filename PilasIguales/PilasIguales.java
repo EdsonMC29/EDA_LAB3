@@ -18,11 +18,11 @@ public class PilasIguales {
 			for (int i = 0; i < n3.length; i++)
 				h3 += n3[i];
 			int[] alturas = { h1, h2, h3 };
-			int[][] cilindros = { n1, n2, n3 };
+			int[][] pilas = { n1, n2, n3 };
 			int min = Math.min(h1, Math.min(h2, h3));
 			for (int i = 0; i < 3; i++) {
 				if (alturas[i] > min) {
-					int[] x = cilindros[i];
+					int[] x = pilas[i];
 					for (int j = 2; j <= x.length; j++) {
 						if (x[x.length - 1] != 0) {
 							x[x.length - 1] = 0;
