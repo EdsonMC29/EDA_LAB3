@@ -11,8 +11,8 @@ public class Stack<T> {
         return root == null;
     }
 
-    public void push(T data) {
-        Node<T> newNode = new Node<>(data);
+    public void push(T datos) {
+        Node<T> newNode = new Node<>(datos);
         if (isEmpty()) {
             root = newNode;
         } else {
@@ -25,7 +25,7 @@ public class Stack<T> {
         if (isEmpty()) {
             throw new NoSuchElementException("Stack está vacío");
         }
-        T data = root.getData();
+        T data = root.getDatos();
         root = root.getNextNode();
         return data;
     }
@@ -34,6 +34,6 @@ public class Stack<T> {
         if (isEmpty()) {
             throw new NoSuchElementException("Stack está vacío");
         }
-        return root.getData();
+        return root.getDatos();
     }
 }
